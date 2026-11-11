@@ -1,0 +1,15 @@
+name: audit-lens
+version: 0.1.0
+description: "Deterministic smart-contract security review inside Hermes: fetch verified source from Sourcify, run pattern-based static checks (reentrancy, tx.origin, unchecked calls, unprotected selfdestruct, delegatecall, access control), flag likely-known issues, and draft structured findings."
+author: Luecria
+kind: standalone
+platforms:
+  - linux
+  - macos
+provides_tools:
+  - audit_contract
+  - fetch_verified_source
+  - check_duplicate
+  - draft_finding
+provides_hooks: []
+requires_hermes: ">=0.21.0"
